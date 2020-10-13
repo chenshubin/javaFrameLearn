@@ -18,7 +18,7 @@ public class App {
 
     @RequestMapping("/")
     public String sayHello(){
-        return "Hello bin";
+        return "Hello bin1";
     }
 
 
