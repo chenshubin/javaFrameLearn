@@ -1,17 +1,19 @@
 package cn.murphy.springbootLearning.service;
 
 import cn.murphy.springbootLearning.pojo.Demo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class DemoJdbcService {
+
+    private Logger logger = LoggerFactory.getLogger(DemoJdbcService.class);
 
     @Autowired
     private JdbcTemplate jdbcTemplate;

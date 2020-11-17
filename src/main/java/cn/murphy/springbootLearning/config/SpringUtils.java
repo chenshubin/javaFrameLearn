@@ -1,11 +1,11 @@
 package cn.murphy.springbootLearning.config;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-import java.util.logging.Logger;
 
 /**
  * spring工具类，为了更方便的获取spring的applicationContext  直接实现接口ApplicationContextAware
@@ -13,7 +13,8 @@ import java.util.logging.Logger;
 @Component
 public class SpringUtils implements ApplicationContextAware {
 
-    private Logger logger = Logger.getLogger("SpringUtils.class");
+//    private Logger logger = Logger.getLogger("SpringUtils.class");
+    private org.slf4j.Logger logger = LoggerFactory.getLogger(SpringUtils.class);
     
     private static ApplicationContext applicationContext;
 

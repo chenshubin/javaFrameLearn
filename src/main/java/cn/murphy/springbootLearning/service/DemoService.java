@@ -2,14 +2,17 @@ package cn.murphy.springbootLearning.service;
 
 import cn.murphy.springbootLearning.pojo.Demo;
 import cn.murphy.springbootLearning.repository.IDemoRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.Optional;
 
 @Service
 public class DemoService {
+
+    private Logger logger = LoggerFactory.getLogger(DemoService.class);
 
     @Autowired
     private IDemoRepository demoRepository;

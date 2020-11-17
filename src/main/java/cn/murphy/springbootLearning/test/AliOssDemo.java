@@ -1,12 +1,17 @@
 package cn.murphy.springbootLearning.test;
 
+import cn.murphy.springbootLearning.service.DemoService;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AliOssDemo {
+
+    private Logger logger = LoggerFactory.getLogger(AliOssDemo.class);
 
     // Endpoint以北京为例，其它Region请按实际情况填写。
     public final static String ENDPOINT = "http://oss-cn-shenzhen.aliyuncs.com";

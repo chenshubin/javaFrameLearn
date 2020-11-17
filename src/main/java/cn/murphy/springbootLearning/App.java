@@ -2,7 +2,10 @@ package cn.murphy.springbootLearning;
 
 
 import cn.murphy.springbootLearning.config.SpringUtils;
+import cn.murphy.springbootLearning.test.AliOssDemo;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
@@ -14,6 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 public class App {
+
+    private Logger logger = LoggerFactory.getLogger(App.class);
+
 
     public HttpMessageConverters faMessageConverters(){
         return new HttpMessageConverters(new FastJsonHttpMessageConverter());

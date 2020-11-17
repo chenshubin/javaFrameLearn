@@ -1,5 +1,7 @@
 package cn.murphy.springbootLearning.handler;
 
+import cn.murphy.springbootLearning.filter.MyFilter;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -8,7 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.logging.Logger;
 
 public class MyInterceptor1 implements HandlerInterceptor {
-    private Logger logger = Logger.getLogger("MyInterceptor1");
+//    private Logger logger = Logger.getLogger("MyInterceptor1");
+    private org.slf4j.Logger logger = LoggerFactory.getLogger(MyInterceptor1.class);
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object object,
