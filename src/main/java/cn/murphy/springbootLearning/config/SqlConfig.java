@@ -14,7 +14,11 @@ public class SqlConfig {
 //    spring.datasource.password=test@123456
     @Value("${spring.datasource.url}")
     private String url;
+
+    @Value("${spring.datasource.username}")
     private String username;
+
+    @Value("${spring.datasource.password}")
     private String password;
 
 
