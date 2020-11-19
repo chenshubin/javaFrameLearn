@@ -2,7 +2,7 @@ package cn.murphy.springbootLearning;
 
 
 import cn.murphy.springbootLearning.config.SpringUtils;
-import cn.murphy.springbootLearning.test.AliOssDemo;
+import cn.murphy.springbootLearning.controller.Hello;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,9 +10,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 
 @SpringBootApplication
