@@ -1,6 +1,6 @@
 package cn.murphy.springbootLearning;
 
-import cn.murphy.springbootLearning.controller.Hello;
+import cn.murphy.springbootLearning.controller.HelloController;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +15,7 @@ public class HelloTest extends TestCase {
 
     // 自动装配业务逻辑层
     @Autowired
-    private Hello hello;
+    private HelloController hello;
 
 
 

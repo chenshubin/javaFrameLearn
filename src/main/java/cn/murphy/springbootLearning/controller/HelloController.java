@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/hello")
-public class Hello {
+public class HelloController {
 
-    private Logger logger = LoggerFactory.getLogger(Hello.class);
+    private Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     @RequestMapping("/sayHello")
     public String sayHello(){

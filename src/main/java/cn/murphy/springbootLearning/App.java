@@ -2,7 +2,7 @@ package cn.murphy.springbootLearning;
 
 
 import cn.murphy.springbootLearning.config.SpringUtils;
-import cn.murphy.springbootLearning.controller.Hello;
+import cn.murphy.springbootLearning.controller.HelloController;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,7 +41,7 @@ public class App {
 
 
         SpringUtils springUtils = getSpringUtil();
-        Hello hello = (Hello) SpringUtils.getBean("hello");
+        HelloController hello = (HelloController) SpringUtils.getBean("hello");
         System.out.println(hello.helloWorld());
     }
 
