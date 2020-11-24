@@ -35,6 +35,10 @@ public class Rename {
                 for(File vedio : vedios){
                     System.out.println(vedio.getName());
                     String name = vedio.getName();
+                    if(name.indexOf("第")>1 || !name.contains("mp4")){
+                        continue;
+                    }
+
                     String numChina = StringUtils.substring(name ,name.indexOf("第")+1,name.indexOf("节")-name.indexOf("第"));
                     int i = ChineseNumberUtil.numberCN2Arab(numChina);
                     System.out.println(i+"-"+name);
